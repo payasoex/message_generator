@@ -7,3 +7,5 @@ const labThings = {
     labTasks: ['PCR', 'Westernblot', 'RNA extraction', 'DNA extraction', 'Real-Time PCR'],
     labConsumables: ['Eppendorf tubes', 'Micropippete tips', 'Cell culture medium', 'Nitrile gloves']
 };
+
+let labFrase = [];
