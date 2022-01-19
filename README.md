@@ -1,5 +1,5 @@
 # Message Generator
-> Random messages generator script to guess the near future.
+> Random messages generator script of labs things.
 
 ## Table of contents
 * [General info](#general-info)
