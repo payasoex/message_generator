@@ -19,16 +19,24 @@ for (let thing in labThings) {
 
 // use object's properties to create a message
     switch (thing) {
-        case 'labObjects':
-            labSentence.push(`Today, you will use the "${labInstruments[thing][optionIdx]}" for your experiment.`);
+        case 'labInstruments':
+            labSentence.push(`Today, you will use the "${labThings[thing][optionIdx]}" for your experiment.`);
             break;
         case 'labTasks':
-            labSentence.push(`Todoay is a great day for to do "${labTasks[thing][optionIdx]}".`);
+            labSentence.push(`Today is a great day for "${labThings[thing][optionIdx]}"!.`);
             break;
         case 'labConsumables':
-            labSentence.push(`Oh unfortunately the "${labConsumables[thing][optionIdx]}" are over, you will have to notify the laboratory manager.`);
+            labSentence.push(`Oh unfortunately the "${labThings[thing][optionIdx]}" are over, you will have to notify the laboratory manager.`);
             break;
         default:
             labSentence.push('There is no enough info.');
     }    
-}
+};
+
+function formatLabThings(thing) {
+    const formatted = labSentence.join('\n');
+    console.log(formatted);
+  };
+  
+
+formatLabThings(labSentence);
